@@ -10,8 +10,10 @@ cutsite=$8
 
 echo 'Selecting unique UMIs'
 if [[ -z "$cutsite" && $numb_of_files == 1 ]]; then # IF THERE IS NO ENZYME && WITH SE READS
-    samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
-    samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "+"' | awk '{OFS="\t";print $4,$1,$2,"+"}' > $aux/forward & pid1=$! # if + strand DSB location is the second field
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "-"' | awk '{OFS="\t";print $4,$1,$3,"-"}' > $aux/reverse & pid1=$! # if - strand DSB location is the third field
+    # samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
+    # samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
     wait $pid1
     wait $pid2
     cat $aux/forward $aux/reverse | LC_ALL=C sort --parallel=8 --temporary-directory=$HOME/tmp -k1,1 > $aux/id.chr.loc.strand & pid1=$!
@@ -26,8 +28,10 @@ if [[ -z "$cutsite" && $numb_of_files == 1 ]]; then # IF THERE IS NO ENZYME && W
 fi
 
 if [[ -z "$cutsite" && $numb_of_files == 2 ]]; then # IF THERE IS NO ENZYME && WITH PE READS
-    samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
-    samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "+"' | awk '{OFS="\t";print $4,$1,$2,"+"}' > $aux/forward & pid1=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "-"' | awk '{OFS="\t";print $4,$1,$3,"-"}' > $aux/reverse & pid1=$!
+    # samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
+    # samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
     wait $pid1
     wait $pid2
     cat $aux/forward $aux/reverse |LC_ALL=C sort --parallel=8 --temporary-directory=$HOME/tmp -k1,1 > $aux/id.chr.loc.strand & pid1=$!
@@ -40,8 +44,10 @@ if [[ -z "$cutsite" && $numb_of_files == 2 ]]; then # IF THERE IS NO ENZYME && W
 fi
 
 if [[ ! -z "$cutsite" && $numb_of_files == 1 ]]; then # IF THERE IS ENZYME && WITH SE READS
-    samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
-    samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "+"' | awk '{OFS="\t";print $4,$1,$2,"+"}' > $aux/forward & pid1=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "-"' | awk '{OFS="\t";print $4,$1,$3,"-"}' > $aux/reverse & pid1=$!
+    # samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
+    # samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
     wait $pid1
     wait $pid2
     cat $aux/forward $aux/reverse | LC_ALL=C sort --parallel=8 --temporary-directory=$HOME/tmp -k1,1 > $aux/id.chr.loc.strand & pid1=$!
@@ -71,8 +77,10 @@ if [[ ! -z "$cutsite" && $numb_of_files == 1 ]]; then # IF THERE IS ENZYME && WI
 fi
 
 if [[ ! -z "$cutsite" && $numb_of_files == 2 ]]; then # IF THERE IS ENZYME && WITH PE READS
-    samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
-    samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "+"' | awk '{OFS="\t";print $4,$1,$2,"+"}' > $aux/forward & pid1=$!
+    bedtools bamtobed -i $out/$experiment.q$quality.bam | awk '$6 == "-"' | awk '{OFS="\t";print $4,$1,$3,"-"}' > $aux/reverse & pid1=$!
+    # samtools view -F 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t+"}' > $aux/forward & pid1=$!
+    # samtools view -f 0x10 $out/$experiment.q$quality.bam | cut -f1,3,4 | awk '{print $0, "\t-"}' > $aux/reverse & pid2=$!
     wait $pid1
     wait $pid2
     cat $aux/forward $aux/reverse | LC_ALL=C sort --parallel=8 --temporary-directory=$HOME/tmp -k1,1 > $aux/id.chr.loc.strand & pid1=$!
