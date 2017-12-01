@@ -3,7 +3,7 @@
 # barcode=CATCACGC
 # code=BB61
 # exp="$code"
-# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
@@ -73,7 +73,7 @@
 # barcode=CATCACGC
 # code=BB62
 # exp="$code"
-# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
@@ -141,88 +141,88 @@
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=CATCACGC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
-# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=GTCGTCGC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=ACGACCGC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=TGATGCGC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=CATCAATC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=GTCGTATC
-# code=FrancescoRossi2
+# code=FR2
 # exp="$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=CATCACGC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=CATCACGC
+# code=FR1
+# exp="$code"
+# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=GTCGTCGC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=GTCGTCGC
+# code=FR1
+# exp="$code"
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=ACGACCGC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=ACGACCGC
+# code=FR1
+# exp="$code"
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=TGATGCGC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=TGATGCGC
+# code=FR1
+# exp="$code"
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=CATCAATC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=CATCAATC
+# code=FR1
+# exp="$code"
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-barcode=GTCGTATC
-code=FrancescoRossi1
-exp="$code"
-./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
-mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# barcode=GTCGTATC
+# code=FR1
+# exp="$code"
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 
 ####################################################################
@@ -230,7 +230,7 @@ mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$b
 # barcode=ACGACCGC
 # code=BB59
 # exp="$code"
-# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
@@ -286,7 +286,7 @@ mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$b
 # barcode=ACGACCGC
 # code=BB60
 # exp="$code"
-# ./bliss_1.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
+# ./bliss_2.sh "$exp" hg19 ../patterns/*"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
@@ -437,33 +437,33 @@ mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$b
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-# barcode=CATCAATC
-# code=BB54
-# exp=bicro51_"$code"
-# ./bliss_1.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
-# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+barcode=CATCAATC
+code=BB54
+exp=bicro51_"$code"
+./bliss_1.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
+mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-# barcode=GTCGTATC
-# code=BB54
-# exp=bicro51_"$code"
-# ./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
-# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+barcode=GTCGTATC
+code=BB54
+exp=bicro51_"$code"
+./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
+mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-# barcode=ACGACATC
-# code=BB54
-# exp=bicro51_"$code"
-# ./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
-# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+barcode=ACGACATC
+code=BB54
+exp=bicro51_"$code"
+./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
+mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
-# barcode=TGATGATC
-# code=BB54
-# exp=bicro51_"$code"
-# ./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
-# mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
-# mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+barcode=TGATGATC
+code=BB54
+exp=bicro51_"$code"
+./bliss_2.sh "$exp" mm9 ../patterns/"$exp"_*_"$barcode" 5 
+mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
+mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=ACGACCGC
 # code=BB55
@@ -690,42 +690,42 @@ mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$b
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=CATCACGC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_1.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=GTCGTCGC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=ACGACCGC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=TGATGCGC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=CATCAATC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 # mv ~/Work/dataset/bliss/"$exp"/outdata/* ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"
 
 # barcode=GTCGTATC
-# code=FrancescoRossi1
+# code=FR1
 # exp=bicro51_"$code"
 # ./bliss_2.sh "$exp" hg19 ../patterns/"$exp"_*_"$barcode" 30 
 # mkdir -p ~/Work/dataset/bliss/"$exp"/outdata_"$barcode"

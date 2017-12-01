@@ -25,7 +25,11 @@ refgen=$HOME/igv/genomes/$genome.fasta
 ################################################################################
 # LOAD DATA FILES
 
-find /media/bicroserver_2-seq/BICRO54/FASTQ/BICRO54-52989938/FASTQ_Generation_2017-11-15_03_56_36Z-60257939 -maxdepth 1 -type f -iname "*$experiment*" | sort > filelist_"$experiment"
+find /media/bicroserver_2-seq/BICRO51/BICRO51-49603554/BB54-59297303 -maxdepth 1 -type f -iname "*$experiment*.fastq.gz" | sort > filelist_"$experiment"
+# find /media/bicroserver_2-seq/BICRO54/FASTQ/BICRO54-52989938/FASTQ_Generation_2017-11-15_03_56_36Z-60257939 -maxdepth 1 -type f -iname "*$experiment*" | sort > filelist_"$experiment"
+# find /media/bicroserver_2-seq/BICRO47/BICRO47-FASTQsBasespace -maxdepth 1 -type f -iname "*$experiment*" | sort > filelist_"$experiment"
+# find /media/bicroserver_2-seq/COLLABORATIONS/IMB01 -maxdepth 1 -type f -iname "*$experiment*" | sort > filelist_"$experiment"
+# find /media/bicroserver_2-seq/BICRO54/FASTQ/BICRO54-52989938/FASTQ_Generation_2017-11-15_03_56_36Z-60257939 -maxdepth 1 -type f -iname "*$experiment*" | sort > filelist_"$experiment"
 # find ~/Work/dataset/bliss -type f -iname "*$experiment*.fastq.gz" | sort > filelist_"$experiment"
 
 numb_of_files=`cat filelist_"$experiment" | wc -l`
